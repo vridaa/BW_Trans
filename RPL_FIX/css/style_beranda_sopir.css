@@ -1,0 +1,611 @@
+:root {
+  --primary: #eeeeee;
+  --secondary: #ffffff;
+  --green: #67708f2b;
+  --secondary-light: rgba(34, 44, 124, 0.2);
+  --secondary-light-2: rgb(127, 183, 126, 0.1);
+  --white: #fff;
+  --black: #393e46;
+  --shadow: 0px 2px 8px 0px var(--secondary-light);
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+.profile-dropdown-list {
+  background-color: #ffffff !important; /* Ganti dengan warna yang Anda inginkan */
+}
+
+
+
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-image-slice: 1;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
+    border 0.3s;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.profile-dropdown:hover {
+  background-color: var(--secondary-light-2);
+  box-shadow: var(--shadow);
+  color: white;
+}
+
+.profile-dropdown-btn span {
+  margin: 0 0.5rem;
+  margin-right: 0;
+}
+
+.profile-dropdown-list {
+  position: absolute;
+  top: 68px;
+  width: 220px;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+  transition: max-height 0.5s; 
+  
+}
+
+.profile-dropdown-list hr {
+  border: 0.5px solid var(--green);
+}
+
+.profile-dropdown-list.active {
+  max-height: 500px;
+}
+
+.profile-dropdown-list-item {
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  transition: background-color 0.2s ease-in, padding-left 0.2s;
+  z-index: 150;
+  list-style: none;
+}
+
+.profile-dropdown-list-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.profile-dropdown-list-item a i {
+  margin-right: 0.8rem;
+  font-size: 1.1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #504171;
+  color: var(--white);
+  line-height: 2.3rem;
+  text-align: center;
+  margin-right: 1rem;
+  border-radius: 50%;
+  transition: margin-right 0.3s;
+}
+
+.profile-dropdown-list-item:hover {
+  padding-left: 1.5rem;
+  background-color: var(--secondary-light);
+  
+}
+
+.navbar .profile-dropdown-list {
+  border-radius: 2.5rem;
+  background: #ffffff;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .nav {
+  border-radius: 6.3rem;
+  background: var(--commonblack-4, rgba(0, 0, 0, 0.04));
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.1rem 1.2rem 0.1rem 0.1rem;
+  box-sizing: border-box;
+}
+
+.nav-item p {
+  border-radius: 6.3rem;
+  margin: 0.9rem 1rem 0.9rem 0;
+  display: flex;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.294;
+  color: var(--text-500-text, #49454d);
+}
+
+.navbar .nav-item :hover {
+  border-radius: 4rem;
+  background: var(--commonwhiteommon, #ffffff);
+  display: flex;
+  box-sizing: border-box;
+}
+
+.navbar .gradient {
+  background: linear-gradient(to right, #ee2c72, #4c07df);
+  border-radius: 2rem;
+  padding: 0.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  cursor: pointer; /* Menunjukkan bahwa elemen bisa diklik */
+  display: flex;
+}
+
+.navbar .gradient:hover .navbar-extra p {
+  color: white;
+}
+
+
+.navbar .navbar-extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border-image-slice: 1;
+  background-color: #fff;
+}
+
+
+.navbar .gradient:hover .navbar-extra p {
+  color: white;
+}
+
+.navbar .navbar-extra .profil {
+  width: 100%;
+  height: 100%;
+}
+
+.gradient {
+  cursor: pointer; /* Menunjukkan bahwa elemen bisa diklik */
+}
+
+.header {
+  background: var(--commonwhiteommon, #ffffff);
+  margin: 0 0 0.6rem 0.9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  width: 105rem;
+  box-sizing: border-box;
+}
+
+.logo-lerna p {
+  margin-top: 1.25rem;
+  font-family: "Abhaya Libre";
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  color: #283655;
+}
+.container-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.custom-btn2 {
+  border-radius: 0.5rem 0.5rem 0 0; /* Menerapkan radius sudut yang sesuai */
+  background: #283655; /* Latar belakang menjadi putih */
+  margin-right: -1rem; /* Margin kanan */
+  margin-left: 3rem; /* Margin kiri */
+  margin-top: 1.2rem; /* Margin atas */
+  height: 45px; /* Tinggi tombol */
+  display: flex;
+  padding: 1rem 1.5rem; /* Padding */
+  width: 10rem; /* Lebar tombol */
+  box-sizing: border-box;
+  color: #ffffff; /* Warna teks */
+  font-weight: 700; /* Ketebalan teks */
+  font-size: 1.1rem; /* Ukuran teks */
+  justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+  align-items: center; /* Memposisikan teks secara vertikal di tengah */
+  border: none; /* Menghapus border */
+}
+
+.custom-btn2:hover {
+  background: #ffffff; /* Latar belakang berubah menjadi putih saat hover */
+  color: #283655; /* Warna teks berubah menjadi hitam saat hover */
+}
+
+.custom-btn3 {
+  border-radius: 3rem; /* Menerapkan radius sudut yang sesuai */
+  background: #283655; /* Latar belakang menjadi putih */
+  margin-right: -1rem; /* Margin kanan */
+  margin-left: 3rem; /* Margin kiri */
+
+  height: 45px; /* Tinggi tombol */
+  display: flex;
+  color: white;
+  padding: 1rem 1.5rem; /* Padding */
+  width: 10rem; /* Lebar tombol */
+  box-sizing: border-box;
+  font-weight: 700; /* Ketebalan teks */
+  font-size: 1.1rem; /* Ukuran teks */
+  justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+  align-items: center; /* Memposisikan teks secara vertikal di tengah */
+}
+
+.custom-btn3:hover {
+  background: #ffffff; /* Latar belakang berubah menjadi putih saat hover */
+  color: #283655; /* Warna teks berubah menjadi hitam saat hover */
+}
+
+.custom-btn3 p {
+  margin-top: 0.5rem;
+}
+
+.custom-btn4 {
+  border-radius: 0.5rem; /* Menerapkan radius sudut yang sesuai */
+  background: #283655; /* Latar belakang menjadi putih */
+  margin-right: 5rem; /* Margin kanan */
+  margin-top: 1.2rem; /* Margin atas */
+  height: 45px; /* Tinggi tombol */
+  width: 100%;
+  color: #ffffff; /* Warna teks */
+  font-weight: 700; /* Ketebalan teks */
+  font-size: 1.1rem; /* Ukuran teks */
+  justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+  align-items: center; /* Memposisikan teks secara vertikal di tengah */
+}
+
+.custom-btn5 {
+  border-radius: 0.5rem; /* Menerapkan radius sudut yang sesuai */
+  background: #283655d5; /* Latar belakang menjadi putih */
+  margin-right: 5rem; /* Margin kanan */
+  margin-top: 1.2rem; /* Margin atas */
+  height: 40px; /* Tinggi tombol */
+  width: 14rem;
+  color: #ffffff; /* Warna teks */
+  font-weight: 700; /* Ketebalan teks */
+  font-size: 1.1rem; /* Ukuran teks */
+  justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+  align-items: center; /* Memposisikan teks secara vertikal di tengah */
+}
+.tengah {
+  margin-top: 5rem;
+  margin-bottom: -9rem;
+}
+
+.bg-custom {
+  background: #283655;
+  border-radius: 2rem;
+  font-family: "Open Sans";
+}
+
+.bg-custom p {
+  font-size: 1.2rem;
+}
+
+.layanan-kami {
+  margin-top: -15rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.layanan-kami1 {
+  margin-top: 30rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.cetak-button {
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: #283655;
+  display: flex;
+  margin-top: 1.2rem;
+  padding: 1rem 1.1rem;
+  height: 45px; /* Tetap menggunakan persentase jika parent sudah memiliki ukuran yang ditentukan */
+  box-sizing: border-box;
+  width: 8.8rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.container-6 {
+  margin-right: 45.5rem;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.label {
+  margin-bottom: 1rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: var(--commonwhiteommon, #ffffff);
+}
+.user-11 {
+  margin-right: 1.1rem;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+/* dipakai form */
+.input-group.mb-3 {
+  position: relative;
+  background: rgba(255, 255, 255, 0.978);
+  border-radius: 0.8rem;
+}
+
+.input-group.mb-3 .form-control {
+  border-radius: 0.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.8);
+  width: 25.5rem;
+  height: 3.3rem;
+  padding: 0.8rem 0;
+  box-sizing: border-box;
+}
+
+.input-group.mb-3 .input-group-text {
+  background: transparent;
+  border: none;
+}
+.input-group.mb-2 {
+  position: relative;
+  background: rgba(255, 255, 255, 0.978);
+  border-radius: 0.8rem;
+}
+
+.input-group.mb-2 .form-control2 {
+  border-radius: 0.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.8);
+  width: 56rem;
+  height: 3.3rem;
+  padding: 0.8rem 0;
+  box-sizing: border-box;
+}
+
+.input-group.mb-2 .input-group-text {
+  background: transparent;
+  border: none;
+}
+
+.container-8 .frame-8 .form-control {
+  border-radius: 0.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.8);
+  width: 30rem;
+  height: 3.3rem;
+  padding: 0.8rem 0;
+  box-sizing: border-box;
+}
+
+.input-group.mb-3 .form-select {
+  border-radius: 0.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.8);
+  width: 25.5rem;
+  height: 3.3rem;
+  padding: 0.8rem 0;
+  box-sizing: border-box;
+}
+
+.frame-6 {
+  margin-right: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.frame-255 {
+  position: relative;
+  padding: 1rem 1.2rem 0.7rem 1.2rem;
+  width: 29.8rem;
+  height: 3.3rem;
+  box-sizing: border-box;
+}
+.frame-7 {
+  margin-bottom: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.container-10 {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.frame-8 {
+  margin-right: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container-8 {
+  margin-bottom: 2.2rem;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+/* sewa */
+.button-basic-10 {
+  justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+  align-items: center;
+}
+
+.custom-btn {
+  border-radius: 0.5rem;
+  background: rgba(41, 0, 76, 0.5);
+  margin-right: 0.2rem;
+  display: flex;
+  padding: 1rem 0;
+  width: 8.2rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s; /* Animasi perubahan warna */
+  overflow-wrap: break-word; /* Warisi dari .container-3 */
+  font-family: "Open Sans"; /* Warisi dari .container-3 */
+  font-weight: 700; /* Warisi dari .container-3 */
+  font-size: 1.1rem; /* Warisi dari .container-3 */
+  line-height: 1.294; /* Warisi dari .container-3 */
+  color: #ffffff; /* Warisi dari .container-3 */
+  justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+  align-items: center; /* Memposisikan teks secara vertikal di tengah */
+}
+
+.custom-btn:hover {
+  background: #ffffff; /* Latar belakang berubah menjadi putih saat hover */
+  color: #000000; /* Warna teks berubah menjadi hitam saat hover */
+}
+
+.container-3 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2.2rem;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.frame-5 {
+  border-radius: 0 1rem 1rem 1rem;
+  background: rgba(97, 108, 133, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.3rem 1.9rem 1.3rem 1.3rem;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.mask-group {
+  border-radius: 1rem;
+  position: absolute;
+  left: 3.7rem;
+  top: 2.6rem;
+  right: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.6rem 0 1.3rem 0;
+  box-sizing: border-box;
+  z-index: 50;
+}
+.container-7 {
+  background: #2836557a;
+  position: relative;
+  margin-right: 0.9rem;
+  display: flex;
+  padding: 17.1rem 4.2rem 8.5rem 6.6rem;
+  box-sizing: border-box;
+  z-index: -100;
+}
+/* Tambahkan CSS berikut untuk .col-md-7 */
+.col-md-7 {
+  display: grid; 
+  place-items: center; 
+  min-width: 1000px; 
+}
+
+/* Styling card-body (opsional) */
+.card-body {
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 600px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  display: flex; /* Aktifkan flexbox pada card-body */
+  flex-direction: column; /* Susun konten card-body secara vertikal */
+  justify-content: center; /* Pusatkan konten card-body secara vertikal */
+  text-align: center;
+}
+
+.disabled-link {
+  pointer-events: none;
+  color: grey;
+  cursor: default;
+  text-decoration: none;
+}
+
+body {
+  background: var(
+    --bggradientstart-gradientmiddle-gradientend-fbf-7-ff-f-4-f-6-fa,
+    #f4f6fa
+  );
+  display: flex;
+  box-sizing: border-box;
+}
+
+.mask-group-1 .teks-paragraf-anda-1 img {
+  max-width: 70%; /* Maksimum lebar gambar adalah 100% dari lebar parent */
+  max-height: 70%; /* Maksimum tinggi gambar adalah 100% dari tinggi parent */
+  margin-left: 5rem;
+  border-radius: 1rem;
+}
+
+.masukf {
+  margin-right: 5rem;
+}
+
+.daftarf {
+  margin-right: 5rem;
+}
+
+.custom-btn4 {
+  border-radius: 0.5rem; /* Menerapkan radius sudut yang sesuai */
+  background: #283655; /* Latar belakang menjadi putih */
+  margin-right: 5rem; /* Margin kanan */
+  margin-top: 1.2rem; /* Margin atas */
+  height: 45px; /* Tinggi tombol */
+  width: 100%;
+  color: #ffffff; /* Warna teks */
+  font-weight: 700; /* Ketebalan teks */
+  font-size: 1.1rem; /* Ukuran teks */
+  justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+  align-items: center; /* Memposisikan teks secara vertikal di tengah */
+}
+
+/* laptop */
+@media (max-width: 1680px) {
+  html {
+    font-size: 79%;
+  }
+  .title {
+    font-size: 35px;
+    margin-left: 210px;
+  }
+}

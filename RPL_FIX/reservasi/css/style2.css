@@ -1,0 +1,491 @@
+:root {
+  --cyan: #dff3fc;
+  --birdong: #364f6b;
+  --abu: #f5f5f5;
+  --pink: #fc5185;
+  --abu2: #d9d9d9;
+  --grey1: #333333;
+  --grey2: #4f4f4f;
+  --grey3: #828282;
+  --grey4: #bdbdbd;
+  --grey5: #e0e0e0;
+  --grey6: #7f8290;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+*.btn {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #f5f5f5;
+  color: #000000;
+  /* min-height: 5000px; */
+}
+
+/* Navbar */
+
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-image-slice: 1;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
+    border 0.3s;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1rem 0;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  height: 7rem;
+  align-items: center;
+}
+
+.logo-lerna p {
+  font-family: "Abhaya Libre";
+  font-size: 2.5rem;
+  margin-left: 8rem;
+  color: #283655;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  border-radius: 6.3rem;
+  padding: 0.1rem 1.2rem 0.1rem 0.1rem;
+  box-sizing: border-box;
+  background: var(--commonblack-4, rgba(0, 0, 0, 0.04));
+  border-radius: 2rem;
+  margin-right: 4rem;
+  width: 35rem;
+  height: 4.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40rem;
+}
+
+.navbar .navbar-nav a {
+  display: flex;
+  display: inline-block;
+  margin: 0rem 2.5rem 20rem 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  color: var(--text-500-text, #49454d);
+  text-decoration: none; /* Pastikan tidak ada garis bawah pada link */
+  align-items: center; /* Pusatkan elemen secara vertikal */
+  justify-content: center; /* Pusatkan elemen secara horizontal */
+}
+
+.navbar .navbar-nav .kamu {
+  font-size: 1.2rem; /* Pastikan ini adalah ukuran yang diinginkan, atau sesuaikan jika perlu */
+
+  border-radius: 6.3rem;
+  overflow-wrap: break-word;
+  font-family: "Open Sans", sans-serif; /* Tambahkan font fallback */
+  font-weight: 700;
+  color: var(--text-500-text, #49454d);
+  height: 4.2rem;
+}
+
+.navbar .navbar-nav .kamu p {
+  margin-top: 1.5rem;
+  align-items: center;
+  max-width: 14rem;
+}
+.navbar .navbar-nav .kamu:hover {
+  border-radius: 6.3rem;
+  background: var(--commonwhiteommon, #ffffff);
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-nav a p:hover {
+  text-align: center;
+}
+
+.navbar .navbar-extra .profil {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .gradient {
+  background: linear-gradient(to right, #ee2c72, #4c07df);
+  border-radius: 2rem;
+  padding: 0.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  cursor: pointer; /* Menunjukkan bahwa elemen bisa diklik */
+}
+
+.navbar .gradient:hover .navbar-extra p {
+  color: white;
+}
+
+.gradient {
+  cursor: pointer; /* Menunjukkan bahwa elemen bisa diklik */
+}
+
+.popup {
+  display: none; /* Popup tidak ditampilkan secara default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-extra:hover {
+  background-color: #67708f2b;
+}
+
+.navbar .navbar-extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border-image-slice: 1;
+  background-color: #fff;
+}
+
+.navbar .navbar-extra p {
+  background: linear-gradient(to right, #ee2c72, #4c07df);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0 0.5rem;
+}
+
+.profile-dropdown:hover {
+  background-color: var(--secondary-light-2);
+  box-shadow: var(--shadow);
+  color: white;
+}
+
+.profile-img {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: url(./assets/profile-pic.jpg);
+  background-size: cover;
+}
+
+.profile-img i {
+  position: absolute;
+  right: 0;
+  bottom: 0.3rem;
+  font-size: 0.5rem;
+  color: var(--green);
+}
+
+.profile-dropdown-btn span {
+  margin: 0 0.5rem;
+  margin-right: 0;
+}
+
+.profile-dropdown-list {
+  position: absolute;
+  top: 68px;
+  width: 220px;
+  right: 0;
+  background-color: var(--white);
+  border-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: max-height 0.5s;
+}
+
+.profile-dropdown-list hr {
+  border: 0.5px solid var(--green);
+}
+
+.profile-dropdown-list.active {
+  max-height: 500px;
+}
+
+.profile-dropdown-list-item {
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  transition: background-color 0.2s ease-in, padding-left 0.2s;
+}
+
+.profile-dropdown-list-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.profile-dropdown-list-item a i {
+  margin-right: 0.8rem;
+  font-size: 1.1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #504171;
+  color: var(--white);
+  line-height: 2.3rem;
+  text-align: center;
+  margin-right: 1rem;
+  border-radius: 50%;
+  transition: margin-right 0.3s;
+}
+
+.profile-dropdown-list-item:hover {
+  padding-left: 1.5rem;
+  background-color: var(--secondary-light);
+}
+
+/* Navbar */
+
+.profile-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-image-slice: 1;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
+    border 0.3s;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero section */
+.hero {
+  margin: 7.5rem 1.5rem 0 1.5rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Menu section */
+.menu {
+  margin: 1.5rem;
+}
+
+.menu .kiri {
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 10rem;
+}
+
+.menu .p1 {
+  background-color: #283655;
+  padding: 1rem;
+  text-align: center;
+  width: 25%;
+  color: #fff;
+  font-size: 1.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.menu .row {
+  background-color: rgba(82, 97, 133, 0.509);
+  padding: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.menu .row .btn:hover {
+  background-color: rgba(48, 15, 82, 0.5);
+}
+
+.menu table {
+  color: #283655;
+  font-family: "Abhaya Libre";
+  font-size: 17px;
+}
+.menu table .titikdua {
+  font-style: bold;
+}
+.menu table th {
+  text-align: left;
+}
+
+.kiri .btn {
+  margin: 1rem;
+  background-color: rgba(41, 0, 76, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 0.75rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+footer {
+  background-color: #283655;
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials img {
+  color: #ffffff;
+  width: 7%;
+  height: 7%;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+footer .socials a:hover {
+  color: #576583;
+}
+
+footer h1 {
+  font-family: "Abhaya Libre";
+  color: white;
+  font-weight: 6px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.credit {
+  background-color: #27272c;
+  padding: 9px;
+  text-align: center;
+}
+
+.credit p {
+  color: #ffffff;
+  font-size: small;
+  margin-top: 5px;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+    border-radius: 0;
+  }
+
+  .tombol-masuk {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .navbar .navbar-nav a::after {
+    border-bottom: 0.1rem solid rgb(54, 79, 107, 0.53);
+  }
+
+  .navbar .navbar-nav a:hover {
+    color: rgb(54, 79, 107, 0.53);
+  }
+
+  .navbar .navbar-nav a {
+    margin-top: 1rem;
+    font-size: 2rem;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

@@ -1,0 +1,187 @@
+body {
+    font-family: "Open Sans";
+  }
+
+/*--------------------------------------------------------------
+# NAVBAR
+--------------------------------------------------------------*/
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .navbar ul {
+    border-radius: 6.3rem;
+    background: var(--commonblack-4, rgba(0, 0, 0, 0.04));
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.1rem 1.2rem 0.1rem 0.1rem;
+    box-sizing: border-box;
+  }
+  .nav-item p {
+    border-radius: 6.3rem;
+    margin: 0.9rem 1rem 0.9rem 0;
+    display: flex;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.294;
+    color: var(--text-500-text, #49454d);
+  }
+  
+  .navbar .nav-item :hover {
+    border-radius: 4rem;
+    background: var(--commonwhiteommon, #ffffff);
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background: var(--commonwhiteommon, #ffffff);
+    margin: 0 0 0.6rem 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    width: 105rem;
+    box-sizing: border-box;
+  }
+  
+  .logo-lerna p{
+    margin-top: 1.25rem;
+    font-family: "Abhaya Libre";
+    font-size: 2.5rem;
+    margin-left: 4rem;
+  }
+  
+  .custom-btn3 {
+    border-radius: 3rem; /* Menerapkan radius sudut yang sesuai */
+    background: #283655; /* Latar belakang menjadi putih */
+    margin-right: -1rem; /* Margin kanan */
+    margin-left: 3rem; /* Margin kiri */
+  
+    height: 45px; /* Tinggi tombol */
+    display: flex;
+    color: white;
+    padding: 1rem 1.5rem; /* Padding */
+    width: 10rem; /* Lebar tombol */
+    box-sizing: border-box;
+    font-weight: 700; /* Ketebalan teks */
+    font-size: 1.1rem; /* Ukuran teks */
+    justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+    align-items: center; /* Memposisikan teks secara vertikal di tengah */
+  }
+  
+  .custom-btn3:hover {
+    background: #ffffff; /* Latar belakang berubah menjadi putih saat hover */
+    color: #283655; /* Warna teks berubah menjadi hitam saat hover */
+  }
+  
+  .mask-group {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    /*background: url("../assets/images/image.png") 50% / cover no-repeat;*/
+    position: absolute;
+    left: 2rem;
+    top: 2.6rem;
+    right: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 50px 0;
+    /*atas kanan bawah kiri*/
+    box-sizing: border-box;
+  }
+  
+  .container-7 {
+    background: #f4f6fa;
+    position: relative;
+    margin-right: 0.9rem;
+    display: flex;
+    padding: 17.1rem 4.2rem 8.5rem 6.6rem;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(
+      --bggradientstart-gradientmiddle-gradientend-fbf-7-ff-f-4-f-6-fa,
+      #f4f6fa
+    );
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  
+  /* laptop */
+  @media (max-width: 1680px) {
+    html {
+      font-size: 79%;
+    }
+    .title {
+      font-size: 35px;
+      margin-left: 210px;
+    }
+  }
+
+/*--------------------------------------------------------------
+# JUDUL
+--------------------------------------------------------------*/
+.judul {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.judul-text {
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.services .icon-box {
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 6px;
+  }
+
+  .icon-box {
+    background-color: #f0f4f7; /* Atur warna latar belakang menjadi ungu */
+    border-radius: 10px; /* Atur sudut border-radius agar terlihat lebih halus */
+}
+
+  .services .icon-box i {
+    float: left;
+    color: #d9232d;
+    font-size: 40px;
+  }
+  
+  .services .icon-box h4 {
+    margin-left: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .icon-box h4 a {
+    color: #556270;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .services .icon-box p {
+    margin-left: 70px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  
+  .services .icon-box:hover h4 a {
+    color: #d9232d;
+  }  
+
+  

@@ -1,0 +1,301 @@
+body {
+    font-family: "Open Sans";
+  }
+
+/*--------------------------------------------------------------
+# NAVBAR
+--------------------------------------------------------------*/
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .navbar ul {
+    border-radius: 6.3rem;
+    background: var(--commonblack-4, rgba(0, 0, 0, 0.04));
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.1rem 1.2rem 0.1rem 0.1rem;
+    box-sizing: border-box;
+  }
+  .nav-item p {
+    border-radius: 6.3rem;
+    margin: 0.9rem 1rem 0.9rem 0;
+    display: flex;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.294;
+    color: var(--text-500-text, #49454d);
+  }
+  
+  .navbar .nav-item :hover {
+    border-radius: 4rem;
+    background: var(--commonwhiteommon, #ffffff);
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background: var(--commonwhiteommon, #ffffff);
+    margin: 0 0 0.6rem 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    width: 105rem;
+    box-sizing: border-box;
+  }
+  
+  .logo-lerna p{
+    margin-top: 1.25rem;
+    font-family: "Abhaya Libre";
+    font-size: 2.5rem;
+    margin-left: 4rem;
+  }
+  
+  .custom-btn3 {
+    border-radius: 3rem; /* Menerapkan radius sudut yang sesuai */
+    background: #283655; /* Latar belakang menjadi putih */
+    margin-right: -1rem; /* Margin kanan */
+    margin-left: 3rem; /* Margin kiri */
+  
+    height: 45px; /* Tinggi tombol */
+    display: flex;
+    color: white;
+    padding: 1rem 1.5rem; /* Padding */
+    width: 10rem; /* Lebar tombol */
+    box-sizing: border-box;
+    font-weight: 700; /* Ketebalan teks */
+    font-size: 1.1rem; /* Ukuran teks */
+    justify-content: center; /* Memposisikan teks secara horizontal di tengah */
+    align-items: center; /* Memposisikan teks secara vertikal di tengah */
+  }
+  
+  .custom-btn3:hover {
+    background: #ffffff; /* Latar belakang berubah menjadi putih saat hover */
+    color: #283655; /* Warna teks berubah menjadi hitam saat hover */
+  }
+  
+  .mask-group {
+    border-radius: 1rem;
+    background-color: #ffffff;
+    /*background: url("../assets/images/image.png") 50% / cover no-repeat;*/
+    position: absolute;
+    left: 2rem;
+    top: 2.6rem;
+    right: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 50px 0;
+    /*atas kanan bawah kiri*/
+    box-sizing: border-box;
+  }
+  
+  .container-7 {
+    background: #f4f6fa;
+    position: relative;
+    /*margin-right: 0.9rem;*/
+    margin: 0 auto;
+    display: flex;
+    padding: 17.1rem 4.2rem 8.5rem 6.6rem;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(
+      --bggradientstart-gradientmiddle-gradientend-fbf-7-ff-f-4-f-6-fa,
+      #f4f6fa
+    );
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  
+  /* footer */
+  footer {
+    background-color: #283655;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    margin-top: 5rem;
+  }
+  
+  footer .socials {
+    padding: 1rem 0;
+  }
+  
+  footer .socials a {
+    color: #ffffff;
+    margin: 1rem;
+  }
+  
+  footer .socials a:hover {
+    color: #576583;
+  }
+  
+  footer h1 {
+    font-family: "Abhaya Libre";
+    color: white;
+    font-weight: 6px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .credit {
+    background-color: #27272c;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .credit p {
+    color: #ffffff;
+    font-size: small;
+  }
+  
+  /* laptop */
+  @media (max-width: 1680px) {
+    html {
+      font-size: 79%;
+    }
+    .title {
+      font-size: 35px;
+      margin-left: 210px;
+    }
+  }
+
+/*--------------------------------------------------------------
+# JUDUL
+--------------------------------------------------------------*/
+.judul {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.judul-text {
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
+# TABLE DATA
+--------------------------------------------------------------*/
+/* CSS untuk memperbesar tabel */
+.tabel_data table {
+  width: 100%; /* Mengatur lebar tabel menjadi 100% dari container */
+  border-collapse: collapse; /* Menyatukan batas sel menjadi satu */
+}
+
+/* CSS untuk memperbesar kolom */
+.tabel_data th,
+.tabel_data td {
+  text-align: center; /* Membuat tulisan rata tengah */
+    vertical-align: middle; /* Membuat tulisan berada di tengah secara vertikal */
+  padding: 20px; /* Menambahkan padding agar konten tidak terlalu dekat dengan tepi kolom */
+  border: 1px solid #dee2e6; /* Menetapkan garis tepi untuk setiap sel */
+  font-size: 16px;
+}
+
+.tabel_data th {
+  background-color: #e6f3fa; /* Memberi warna latar belakang header tabel */
+  /*color: white; /* Mengatur warna teks pada header tabel */
+}
+
+/* CSS untuk memperbesar tombol dalam tabel */
+.tabel_data button {
+  padding: 5px 15px; /* Menambahkan padding pada tombol */
+}
+
+/*--------------------------------------------------------------
+# BUTTON GROUP
+--------------------------------------------------------------*/
+
+.tombol-tombol button
+{
+  width: 90px; /* Lebar tombol */
+  height: 36px; /* Tinggi tombol */
+}
+
+.tombol-tombol 
+{
+  padding-top: 15px;
+  margin-bottom: 20px; /* Berikan jarak bawah */
+}
+
+/*--------------------------------------------------------------
+# FORM
+--------------------------------------------------------------*/
+
+#formInputArmada 
+{
+  display: none; /* Sembunyikan formbox secara default */
+  position: fixed; /* Tetapkan posisi formbox */
+  top: 50%; /* Posisikan di tengah vertikal */
+  left: 50%; /* Posisikan di tengah horizontal */
+  transform: translate(-50%, -50%); /* Pusatkan formbox */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Atur indeks z untuk menampilkan di atas elemen lain */
+}
+.formbox {
+  display: none;
+}
+
+.formbox.visible {
+  display: block;
+}
+
+.title 
+{
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.title-text 
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Gaya untuk form input */
+.form table {
+  width: 100%; /* Lebar tabel 100% */
+}
+
+.form table td 
+{
+  padding-bottom: 15px;
+
+}
+
+.form table td:nth-child(2) 
+{
+  padding-left: 20px;
+}
+
+.submit-button 
+{
+  text-align: right;
+}
+
+.submit-button button 
+{
+  width: 80px; /* Lebar tombol */
+  height: 35px; /* Tinggi tombol */
+}
+
+.form .form-select {
+  height: 35px;
+}
+
+input
+{
+    width: 400px !important;
+    height: 35px !important;
+}
